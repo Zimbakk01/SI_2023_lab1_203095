@@ -10,6 +10,7 @@ git init
 5.Го поврзав на следниов начин 
 git remote add origin https://github.com/Zimbakk01/SI_2023_lab1_203095.git
 git push -u origin master
+r
 
 6. Прво ја креирав датотеката со touch README.md и ја едитирав, а комит направив со
 git add README.md

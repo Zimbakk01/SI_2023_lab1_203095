@@ -1,0 +1,119 @@
+1.
+2.
+3. Се најавив на Github и креирав репозиториум во потребниот формат.
+
+4. Отворив git bash и ги искористив следниве команди: 
+mkdir SI_2023_lab1_203095
+cd SI_2023_lab1_203095
+git init
+
+5.Го поврзав на следниов начин 
+git remote add origin https://github.com/Zimbakk01/SI_2023_lab1_203095.git
+git push -u origin master
+
+6. Прво ја креирав датотеката со touch README.md и ја едитирав, а комит направив со
+git add README.md
+git commit -m "Initial commit"
+git push origin master
+
+7. Прво ја креирав датотеката со touch SILab1.java и ја едитирав, а комит направив со
+git add SILab1.java
+git commit -m "Add java class"
+git push origin master
+
+8.
+
+9. Јас отворив три гранки на следниов начин
+git checkout master
+git checkout -b bug1
+git checkout -b bug2
+git checkout -b bug3
+10. git checkout bug1
+
+11. Ја едитирав грешката и направив commit на следниов начин
+git add SILab1.java
+
+git commit -m "Fix wrong loop for reading"
+12. git checkout bug2
+
+13. Ја едитирав грешката и направив commit на следниов начин
+git add SILab1.java
+git commit -m "Fix wrong condition in filterOddNumbers."
+
+14. git checkout bug2
+
+15. Ја едитирав грешката и направив commit на следниов начин
+git add SILab1.java
+
+git commit -m "Fix method sumEvenNumbers."
+
+16. git fetch
+    git checkout bug1
+    git merge origin/bug1
+    git checkout bug2
+    git merge origin/bug2
+    git checkout bug3
+    git merge origin/bug3
+    git push
+
+17. git checkout master
+
+18. git merge bug1
+    git add .
+    git commit -m "Merge bug1"
+    git push
+
+19. git fetch
+    git checkout bug1
+    git merge origin/bug1
+    git checkout bug2
+    git merge origin/bug2
+    git checkout bug3
+    git merge origin/bug3
+    git push
+
+20. git merge bug2
+    git add .
+    git commit -m "Merge bug2"
+    git push
+
+21. git fetch
+    git checkout bug1
+    git merge origin/bug1
+    git checkout bug2
+    git merge origin/bug2
+    git checkout bug3
+    git merge origin/bug3
+    git push
+
+22. git checkout bug3
+
+23. git rebase master
+    git add . 
+    git rebase --continue
+    git push --force
+
+24. git checkout master
+
+25. git merge bug3
+    git add .
+    git commit -m "Merge bug3"
+    git push
+
+26. git fetch
+    git checkout bug1
+    git merge origin/bug1
+    git checkout bug2
+    git merge origin/bug2
+    git checkout bug3
+    git merge origin/bug3
+    git push
+
+27. git log > logs.txt
+    touch 203095.txt
+    git add logs.txt 203095.txt
+    git commit -m "Final commit"
+
+28. git fetch
+    git merge origin/master
+
